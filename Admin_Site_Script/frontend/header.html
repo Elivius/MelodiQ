@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelodiQ</title>
+    
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/melodiq.jpg" class="logo-img" alt="Logo">
+        </div>
+        <a href="userManagement.php" class="nav-button">User Management</a>
+        <a href="songManagement.php" class="nav-button">Song Management</a>
+        <a href="analyticsReport.php" class="nav-button">Analytics & Report</a>
+        <a href="feedbackManagement.php" class="nav-button">Feedback Management</a>
+        <a href="artistManagement.php" class="nav-button">Artist Management</a>
+        <a href="login.php" onclick="return confirmSignOut();">
+            <img src="images/avatar.jpg" alt="Profile Picture" class="profile-pic">
+        </a>
+    </div>
+
+    <script>
+        function confirmSignOut() {
+            if (confirm('Are you sure you want to log out?')) {
+                window.location.replace('../backend/processSignOut.php');
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>

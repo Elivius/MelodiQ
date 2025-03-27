@@ -1,0 +1,252 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    gap: 150px;
+    padding: 30px 10px;
+    width: 100%;
+    max-width: 1500px;
+    margin-top: 50px;
+    overflow-x: auto;
+}
+
+.leaderboard-header h1 {
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+.box {
+    background: linear-gradient(#8ED1F4, #FFBCDB);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-shrink: 0; 
+}
+
+
+.box-tall {
+    height: 480px;
+}
+.box-medium {
+    height: 240px; 
+}
+.box-short {
+    height: 100px; 
+}
+
+.player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;     
+}
+
+.square {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 40px;
+    background-color: #3a3a50;
+    border-radius: 20px;
+    transition: transform 0.2s ease-in;
+}
+
+.square:hover {
+    background: linear-gradient(#309FF9, #68E8FD);
+    transform: scale(1.1);
+}
+
+.square h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.square p{
+    font-size: 18px;
+    text-align: center;
+    margin: 15px;
+}
+
+.activity-container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.challenge-your-friend {
+    background: #00C985;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 15px;
+    margin-top: 30px;
+    align-items: center;
+    padding: 20px 25px;
+    width: 300px;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in
+}
+
+.exit {
+    background: #ff4a6e;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    align-items: center;
+    padding: 20px 25px;
+    border-radius: 10px;
+    width: 100px;
+    transition: transform 0.2s ease-in
+}
+
+.retry {
+    background: #F6871D;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 15px;
+    margin-top: 30px;
+    align-items: center;
+    padding: 20px 25px;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.2s ease-in
+}
+
+.challenge-your-friend:hover {
+    background-color: #009f6a;
+    transform: scale(1.1);
+}
+
+.exit:hover {
+    background-color: #ff2a4d;
+    transform: scale(1.1);
+}
+
+.retry:hover {
+    background-color: #c56b18;
+    transform: scale(1.1);
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 1400px) {
+    .hero {
+        gap: 80px;
+    }
+    
+    .box {
+        width: 100px;
+    }
+
+    .square {
+        max-width: 280px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .hero {
+        gap: 15px;
+        justify-content: space-evenly;
+    }
+    
+    .box {
+        width: 100px;
+    }
+
+    .square {
+        max-width:280px;
+        height: 170px;
+        margin-bottom: 15px;
+    }
+
+    .exit{
+        width: 150px;
+    }
+
+    .challenge-your-friend {
+        width: 250px;
+    }
+
+    .retry {
+        width: 250px;
+    }
+
+    .square h1 {
+        font-size: 23px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .square p{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .hero {
+        gap: 0px;
+        justify-content: space-evenly;
+    }
+    
+    .box {
+        width: 100px;
+    }
+
+    .square {
+        max-width: 220px;
+        height: 150px;
+        margin-bottom: 15px;
+    }
+
+    .square h1 {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .square p{
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .exit{
+        width: 100px;
+    }
+
+    .challenge-your-friend {
+        width: 200px;
+    }
+
+    .retry {
+        width: 200px;
+    }
+}

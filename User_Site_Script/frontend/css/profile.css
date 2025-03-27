@@ -1,0 +1,141 @@
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align to the left */
+    padding: 20px;
+    padding-left: 40px; /* Add more padding on the left side to give it space */
+    width: 100%;
+    max-width: 1200px; /* You can limit the width if you'd like to prevent it from stretching too far */
+    margin: 0 auto; /* Center the hero section within the page */
+}
+
+.profile-card-buttons {
+    display: flex;
+    justify-content: center; /* Align all child elements (buttons) to the left */
+    gap: 10px;
+    width: 100%;
+    margin-right: 340px;
+}
+
+.hero-button {
+    background: #3e4052;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 120px;
+    height: 50px;
+}
+
+.hero-button.active {
+    background: linear-gradient(#6E86DC, #8B73F7);
+}
+
+.profile-card {
+    width: 450px;
+    height: 300px;
+    background-color: #2e2e40;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+    color: white;
+    display: none;
+    transition: transform 0.2s ease-in;
+}
+
+.profile-card:hover {
+    background: linear-gradient(#6E86DC, #8B73F7);
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 750px) {
+    .profile-card:hover {
+        background: linear-gradient(#6E86DC, #8B73F7);
+        transform: scale(1);
+    }
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-card h1 {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+.profile-pic-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.user-icon-settings {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.profile-details {
+    margin-bottom: 30px;
+}
+
+.profile-details p {
+    margin-bottom: 15px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.function-button-container {
+    display: flex;
+    gap: 200px;
+    margin-top: 20px;
+}
+
+.signout-button {
+    background: #ff4a6e;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.update-button {
+    background: #00C985;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.signout-button:hover {
+    background: #ff2a4d;
+    transform: scale(1.1);
+}
+
+.update-button:hover {
+    background: #009f6a;
+    transform: scale(1.1);
+}

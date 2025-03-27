@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.logo .logo-img {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.nav-button {
+    text-decoration: none ;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.nav-button:hover {
+    background-color: #555;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/* main content */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+/* modal wrapper */
+.modal {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    width: 400px;
+    padding: 20px;
+}
+
+/* header */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    margin: 0;
+}
+
+.close-btn {
+    text-decoration: none;
+    border: none;
+    background: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: black;
+}
+
+/* form layout */
+.modal-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 8px 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* password wrapper */
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input {
+    padding-right: 30px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+}
+
+/* status selection */
+.status {
+    display: flex;
+    flex-direction: column; 
+}
+
+.status > div {
+    margin-top: 5px; 
+}
+
+.status-btn {
+    padding: 12px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #cecece;
+    font-size: 16px;
+    text-align: center;
+    flex: 1 1 auto;
+    min-width: 120px;
+}
+
+.status-btn.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* submit button */
+.submit-btn {
+    width: 410px;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

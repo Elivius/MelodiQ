@@ -1,0 +1,216 @@
+/* ==========  Hero Section  ========== */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #2e2e40;
+    margin-bottom: 65px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 900px;
+    max-height: auto;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+    border-radius: 20%;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.playBtn-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    z-index: 10;
+}
+
+.song-details {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 40px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.song-details h3 {
+    margin-bottom: 20px;
+}
+
+
+.song-details p {
+    color: white;
+    font-size: 20px;
+    margin-right: 40px;
+    margin-left: 5px;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+/* ==========  Button Group  ========== */
+.button-container {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-top: 20px;
+
+}
+
+.spotify-button,
+.youtube-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.2s ease-in;
+}
+
+.spotify-button img {
+    width: 130px;
+    height: auto;
+}
+
+.youtube-button img {
+    width: 127px;
+    height: 50px;
+}
+
+.spotify-button:hover,
+.youtube-button:hover {
+    transform: scale(1.1);
+}
+
+/* ==========  Continue Button  ========== */
+button.continue-button {
+    background: #66D6FC;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: auto;
+    transition: transform 0.2s ease-in;
+}
+
+.continue-button:hover {
+    background-color: #4fb2d3;
+    transform: scale(1.1);
+}
+
+/* Quit Game Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #2e2e40;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    width: 600px;
+    max-width: 90%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+.modal-buttons {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.modal-buttons button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+}
+
+.leaveBtn {
+    background-color: #ff4a6e;
+    color: white;
+}
+
+.leaveBtn:hover {
+    background-color: #d62828;
+    transform: scale(1.1);
+}
+
+.stayBtn {
+    background-color: #00C985;
+    color: white;
+}
+
+.stayBtn:hover {
+    background-color: #009f6a;
+    transform: scale(1.1);
+}
+
+.progress-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.progress-dots .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #555;
+}
+
+.progress-dots .dot.active {
+    background-color: #66D6FC;
+}
+
+@media screen and (max-width: 900px) {
+    .song-details {
+        margin-top: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .song-details {
+        margin-top: auto;
+    }
+
+    .progress-dots .dot {
+        width: 10px;
+        height: 10px;
+    }
+}

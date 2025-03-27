@@ -1,0 +1,163 @@
+/* Responsive Behavior */
+@media (max-width: 768px) {
+    .artist-list {
+        gap: 20px; /* Reduce space between items */
+    }
+
+    .artist-list img {
+        max-width: 180px; /* Reduce image size */
+    }
+}
+
+@media (max-width: 480px) {
+    .artist-list img {
+        max-width: 120px; /* Further reduce size for small screens */
+    }
+}
+
+/* Artist Selection Section */
+.artist-selection {
+    padding: 20px;
+    background-color: #2e2e40;
+    margin: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px; /* Center it and control width */
+    text-align: center;
+}
+
+.artist-selection h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.artist-list {
+    display: flex;
+    justify-content: center;
+    gap: 66px; /* Space between artist names */
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.artist-list a {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    transition: transform 0.2s ease-in;
+}
+
+.artist-list img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.artist-list a:hover {
+    color: #ff4a6e;
+    transform: scale(1.1);
+}
+
+.title-underline {
+    width: 100%;
+    height: 2px;
+    background-color: #66D6FC;
+    border: none;
+    margin: 10px auto 30px auto;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #2e2e40;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Title */
+.modal-content h2 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.modal-content h3 {
+    margin-bottom: 20px;
+}
+
+.modal-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.difficulty-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.beginner-button,
+.expert-button {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.beginner-button {
+    background-color: #00C985;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    transition: transform 0.2s ease-in;
+}
+
+.beginner-button:hover {
+    background: #009f6a;
+    transform: scale(1.1);
+}
+
+.expert-button {
+    background-color: #F6871D;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    transition: transform 0.2s ease-in;
+}
+
+.expert-button:hover {
+    background: #c56b18;
+    transform: scale(1.1);
+}

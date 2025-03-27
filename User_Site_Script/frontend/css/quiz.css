@@ -1,0 +1,249 @@
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #2e2e40;
+    margin-bottom: 65px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1500px;
+    max-height: auto;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: #3a3a50;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    min-height: 250px;
+    margin-bottom: 100px;
+}
+
+.box-large {
+    width: 70%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    margin-bottom: 100px;
+    position: relative;
+    border-radius: 4%;
+}
+
+.progress-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.progress-dots .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #555;
+}
+
+.progress-dots .dot.active {
+    background-color: #66D6FC;
+}
+
+.gif-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 5px;
+}
+
+.gif-container img {
+    width: 100%;
+    max-width: 400px;
+    min-width: 150px;
+    height: auto;
+    align-items: center;
+}
+
+.playBtn-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+.answer-container {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Song buttons */
+.song-button {
+    font-size: large;
+    background: linear-gradient(#6E86DC, #8B73F7);
+    color: white;
+    margin: 5px;
+    width: 180px;
+    height: 180px;
+    min-width: 100px;
+    min-height: 100px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s ease-in;
+}
+
+.song-button:hover {
+    background: linear-gradient(#309FF9, #68E8FD);
+    transform: scale(1.1);
+}
+
+.song-button.correct-answer {
+    background: #00C985 !important;
+    color: white !important;
+}
+
+.song-button.wrong-answer {
+    background: #ff4a6e !important;
+    color: white !important;
+}
+
+@media screen and (max-width: 600px) {
+    .song-button {
+        width: 120px;
+        height: 120px;
+        font-size: medium;
+    }
+
+    .progress-dots .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-large, .box-small {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .answer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .song-button {
+        width: 100px;
+        height: 100px;
+        font-size: small;
+    }
+
+    .progress-dots .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .box-large, .box-small {
+        width: 95%;
+    }
+}
+
+/* Top 5 Ranking Label */
+.top-5-ranking {
+    position: absolute;
+    top: 9px; /* Aligning it at the same vertical position as Quit Game */
+    left: 200px; /* Adjusted for spacing */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* Quit Game Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #2e2e40;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    width: 600px;
+    max-width: 90%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+.modal-buttons {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.modal-buttons button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+}
+
+.leaveBtn {
+    background-color: #ff4a6e;
+    color: white;
+}
+
+.leaveBtn:hover {
+    background-color: #d62828;
+    transform: scale(1.1);
+}
+
+.stayBtn {
+    background-color: #00C985;
+    color: white;
+}
+
+.stayBtn:hover {
+    background-color: #009f6a;
+    transform: scale(1.1);
+}
+
+.timer {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}  
